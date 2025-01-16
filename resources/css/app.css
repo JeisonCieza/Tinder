@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .bg-tinder {
+        @apply bg-gradient-to-r from-pink-500 via-red-500 to-rose-500;
+    }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 7px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #919496; 
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #8a8585; 
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #e0e4ec; 
+    /* background: #ffff; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* ----------- */
+.custom-scrollbar-chat::-webkit-scrollbar {
+    width: 7px;
+}
+.custom-scrollbar-chat::-webkit-scrollbar-thumb {
+    background: #919496; 
+    border-radius: 8px;
+}
+.custom-scrollbar-chat::-webkit-scrollbar-thumb:hover {
+    /* background: #8a8585;  */
+    /* background: #EE455C; */
+    background: linear-gradient(
+        to right,
+        #ec4899 0%,       /* Color inicial */
+        #ef4444 75%,      /* Color intermedio */
+        #f43f5e 100%      /* Color final */
+    );
+}
+.custom-scrollbar-chat::-webkit-scrollbar-track {
+    background: #e0e4ec; 
+    /* background: #ffff; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* border-radius: 8px; */
+}
